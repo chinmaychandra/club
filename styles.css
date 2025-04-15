@@ -276,7 +276,7 @@ body{
     align-items:  center;
 }
 .intro img{
-    width: 15em;
+    width: 8em;
 }
 .intro-section{
     opacity: 0;
@@ -1042,11 +1042,12 @@ footer{
   align-items: center;
 }
 .contact{
-  display: grid;
-  grid-template-columns: 40% 40%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: center;
 
 }
 .contact-cnt{
@@ -1106,6 +1107,9 @@ footer .row a:hover{
     }
     .intro h2:last-of-type{
         display: none;
+    }
+    .intro img{
+        width: 15em;
     }
     .prim span{
         font-size: 1.2em;
@@ -1186,6 +1190,13 @@ footer .row a:hover{
         height: 180px;
     }
     .grid-wrapper{
+        width: 100%;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 }
